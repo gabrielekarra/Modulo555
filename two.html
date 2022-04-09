@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modulo555, Trova la formazione migliore!</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  </head>
+  <body bgcolor=”#0000”>
+    <div>
+    <center>
+      <a href="index.html" ><img src="logo.png" width="600em" alt=""></a>
+       <div style="position:absolute; top:100px; left:21em ; right:21em"><p>(beta)</p></div>
+      <br><br><br>
+      <section class="section padding-top-70 padding-bottom-0" id="sel">
+    <p>Portieri</p>
+    <form autocomplete="off" action="/action_page.php">
+    <div class="autocomplete" style="width:300px;"><input type="text" id="p1" class="btn-toolset1" style="width:300px"></div><br><br>
+    <div class="autocomplete" style="width:300px;"><input type="text" id="p2" class="btn-toolset1" style="width:300px"></div><br><br>
+    <div class="autocomplete" style="width:300px;"><input type="text" id="p3" class="btn-toolset1" style="width:300px"></div><br><br>
+
+   <p>Difensori</p>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d1" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d2" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d3" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d5" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d4" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d6" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d7" class="btn-toolset1" style="width:300px"></div><br><br>
+     <div class="autocomplete" style="width:300px;"><input type="text" id="d8" class="btn-toolset1" style="width:300px"></div><br><br>
+   <p>Centrocampisti</p>
+
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c1" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c2" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c3" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c4" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c5" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c6" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c7" class="btn-toolset1" style="width:300px"></div><br><br>
+             <div class="autocomplete" style="width:300px;"><input type="text" id="c8" class="btn-toolset1" style="width:300px"></div><br><br>
+   <p>Attaccanti</p>
+
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a1" class="btn-toolset1" style="width:300px"></div><br><br>
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a2" class="btn-toolset1" style="width:300px"></div><br><br>
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a3" class="btn-toolset1" style="width:300px"></div><br><br>
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a4" class="btn-toolset1" style="width:300px"></div><br><br>
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a5" class="btn-toolset1" style="width:300px"></div><br><br>
+                     <div class="autocomplete" style="width:300px;"><input type="text" id="a6" class="btn-toolset1" style="width:300px"></div><br><br>
+   <br><br><p1 style="font-size: 36px;">Modulo (es: 442)</p1><br>
+   <p2  style="font-size: 15px;">(lascia vuoto se vuoi essere consigliato)</p2><br><br><br>
+                     <div class="autocomplete" style="width:200px;"><input type="text" id="mo" class="btn-toolset1" style="width:200px"></div><br><br>
+       </center>
+     </div>
+   </form>
+ </section>
+
+     <script src="autocompletamento.js"></script>
+     <script src="autocompletamentodif.js"></script>
+     <script src="autocompletamentocen.js"></script>
+     <script src="autocompletamentoatt.js"></script>
+     <script src="selezione.js"></script>
+     <script src="calcolo.js"></script>
+     <br>
+     <center>
+     <button class="btn-toolset" onclick="Portieri()" type="button"><strong>CALCOLA</strong></button>
+     </center>
+
+     <!--<img src="campo base.png" class="ruota" width="800em" z-index="-999">-->
+     <section class="section padding-top-70 padding-bottom-0" id="for">
+     <center>
+     <div1 style="font-size: 30px;" id="modulo"></div1><br>
+     <div1 style="font-size: 30px;" id="formazione"></div1><br><br>
+     <div1 style="font-size: 20px;" id="p"></div1><br>
+     <div1 style="font-size: 20px;" id="g1"></div1><br>
+     <div1 style="font-size: 20px;" id="g2"></div1><br>
+     <div1 style="font-size: 20px;" id="g3"></div1><br>
+     <div1 style="font-size: 20px;" id="g4"></div1><br>
+     <div1 style="font-size: 20px;" id="g5"></div1><br>
+     <div1 style="font-size: 20px;" id="g7"></div1><br>
+     <div1 style="font-size: 20px;" id="g6"></div1><br>
+     <div1 style="font-size: 20px;" id="g8"></div1><br>
+     <div1 style="font-size: 20px;" id="g9"></div1><br>
+     <div1 style="font-size: 20px;" id="g10"></div1><br><br><br>
+
+     </center>
+     </section>
+   <center>
+  </body>
+</html>
